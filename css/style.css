@@ -1,0 +1,166 @@
+
+body {
+  margin: 0;
+  background-color: white; 
+}
+
+div#mainNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1fbcd7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding-right: 100px;
+}
+
+div#mainNav ul li {
+  float: right;
+}
+
+div#mainNav ul li a {
+  margin-left: 25px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div#mainNav ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+div#mainNav ul li a.active{
+  background-color: #e25353;
+}
+
+div#logo {
+  display: flex;
+}
+div#logo img {
+  max-height: 10%;
+  max-width: 10%;
+  margin-top: 50px;
+  display: block;
+}
+
+div#logo h1{
+  color: #46ab72;
+  float: left;
+  margin-top: 100px;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  opacity: 1;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  opacity: 1;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+div#MainContent h2{
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 300px;
+  color: #1fbcd7;
+  display: flex;
+}
+
+div#MainContent p{
+  display: flex;
+  text-align: justify;
+  margin-left: 300px;
+  margin-right: 500px;
+  line-height: 1.6;
+} 
+
+div#MainContent ul li{
+  
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 500px;
+  line-height: 1.6;
+} 
