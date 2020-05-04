@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header id="pageHeader">
+      <div id="mainNav">
+        <ul>
+          <li><a href="contact_us.html"> Contact Us </a></li>
+          <li><a href="about_us.html"> About Us </a></li>
+          <li><a href="resources.html"> Resources </a></li>
+          <li><a href="news.html"> News </a></li>
+          <li><a href="index.html"> Home </a></li>
+        </ul>
+      </div>
+      <div id = "logo">
+      <img src="media/logoPrimary.png">
+      <h1> <b> Chicago Recycling Coalition</b> </h1>
+    </div>
+    </header>
+    <article id="mainArticle">
+      
+      <div id="MainContent">
+      <div id="donate">
+      	<h2>Donate</h2>
+      	<button class="open-button" onclick="openForm()"> Donate Now! </button>
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Send in your Donations!</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="Fname"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="Fname" required>
+
+            <label for="Lname"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="Lname" required>
+
+              <label for="Lname"><b>Donation Amount</b></label>
+            <input type="text" placeholder="Enter Last Name" name="Lname" required>
+
+            <button type="submit" class="btn">Donate</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      	
+      </div>
+
+      <div id="subscribe">
+        <button class="open-button" onclick="openForm()"> Subscribe To our mailing list </button>
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Subscribe to our mailing list</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="Fname"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="Fname" required>
+
+            <label for="Lname"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="Lname" required>
+
+            <button type="submit" class="btn">Subscribe</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>   
+
+      </div>
+
+
+      <div id="resources">
+
+      	<h2>Resources</h2>
+      	<p>
+      		<ol>
+      			<li><a href="">Ut enim ad minim veniam</a></li>
+      			<li><a href="">Sunt in culpa</a></li>
+      			<li><a href="">Hysf jsduy hethiyrt</a></li>
+      		</ol>
+      	</p>
+      	
+      </div>
+
+
+  </div>
+    </article>
+    <script type="text/javascript" src="javascript/imageSlider.js"></script>
+  </body>
+
+</html>
