@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+div#mainNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1fbcd7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding-right: 100px;
+}
+
+div#mainNav ul li {
+  float: right;
+}
+
+div#mainNav ul li a {
+  margin-left: 25px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div#mainNav ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+div#mainNav ul li a.active {
+  background-color: #e25353;
+}
+
+div#logo {
+  display: flex;
+  justify-content: center;
+}
+
+div#logo img {
+  max-height: 10%;
+  max-width: 10%;
+  /* margin: auto; */
+  margin-top: 50px;
+}
+
+div#logo h1 {
+  color: #46ab72;
+  margin-top: 100px;
+}
+
+
+.slideshow-container {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  opacity: 1;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  opacity: 1;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+div#MainContent h2 {
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 300px;
+  color: #46ab72;
+  display: flex;
+}
+
+div#MainContent p {
+  display: flex;
+  text-align: justify;
+  margin-left: 300px;
+  margin-right: 500px;
+  line-height: 1.6;
+}
+
+div#MainContent ul li {
+
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 500px;
+  line-height: 1.6;
+}
+
+div#form-popup {
+  box-sizing: border-box;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  top: 25px;
+  right: 28px;
+  width: 280px;
+  float: right;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  overflow: hidden;
+  float: right;
+  display: none;
+  position: relative;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  margin-right: -280px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text]{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+footer ul {
+  list-style-type: none;
+  background-color: #A9A9A9;
+  position: relative;
+  width: 100%;
+  padding: 1.2em;
+  margin-bottom: 0px;
+}
+
+footer ul li{
+  float:center;
+  margin-left: 300px;
+}
+
+footer ul li{
+  color: white;
+}
+
+footer p{
+  margin-left: 300px;
+  font-size: 0.75em;
+  color: white;
+}
