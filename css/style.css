@@ -265,3 +265,7 @@ footer p{
   font-size: 0.75em;
   color: white;
 }
+
+div#boardMem ul {
+list-style-type: none;
+}
